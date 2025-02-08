@@ -1,8 +1,8 @@
 describe('Покупка аватара', function () {
     it('e2e тест на покупку нового аватара для тренера', function () {
          cy.visit('https://pokemonbattle.ru/');
-         cy.get('input[type="email"]').type('mit.ksy@yandex.ru');
-         cy.get('input[type="password"]').type('140314Mit');
+         cy.get('input[type="email"]').type('USER_LOGIN');
+         cy.get('input[type="password"]').type('USER_PASSWORD');
          cy.get('button[type="submit"]').click();
          cy.wait(2000);
          cy.get('.header__container > .header__id').click({ force: true });
